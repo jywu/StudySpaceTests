@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.jayway.android.robotium.solo.Solo;
 import edu.upenn.cis573.SearchActivity;
 
-@TargetApi(Build.VERSION_CODES.CUPCAKE)
+//@TargetApi(Build.VERSION_CODES.CUPCAKE)
 public class StdySpaceButtonsTest extends
 		ActivityInstrumentationTestCase2<SearchActivity> {
 
@@ -19,7 +19,7 @@ public class StdySpaceButtonsTest extends
 	private SearchActivity searchActivityObject;
 
 	public StdySpaceButtonsTest() {
-		super("edu.upenn.cis573", SearchActivity.class);
+		super(SearchActivity.class);
 		// TODO Auto-generated constructor stub
 	}
 

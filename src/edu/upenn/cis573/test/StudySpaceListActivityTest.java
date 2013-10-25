@@ -20,7 +20,6 @@ public class StudySpaceListActivityTest extends
 	protected void setUp() throws Exception {
 		super.setUp();
 		
-		StudySpaceListActivity _listActivity = getActivity();
 	}
 
 	public void testListSize() {
