@@ -40,8 +40,10 @@ public class CustomMapTest extends
 		setActivityIntent(i);
 	}
 	
+	
 	public void testCreate() {
 		activity = getActivity();
 	}
+	
 
 }
