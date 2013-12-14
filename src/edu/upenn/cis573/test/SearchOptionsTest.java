@@ -18,10 +18,8 @@ public class SearchOptionsTest extends TestCase {
 		obj.setMonth(2);
 		obj.setYear(2012);
 
-		Date startDate = obj.getStartDate();
-
-		assertEquals(2, startDate.getMonth());
-		assertEquals(1, startDate.getDate());
+		assertEquals(2, obj.getMonth());
+		assertEquals(1, obj.getDay());
 
 	}
 	
@@ -30,14 +28,10 @@ public class SearchOptionsTest extends TestCase {
 		obj.setMonth(4);
 		obj.setYear(2012);
 		obj.setEndHour(3);
-		obj.setEndMinute(20);
-		
-		Date endDate = obj.getEndDate();
+		obj.setEndMinute(20);		
 
-		assertEquals(4, endDate.getMonth());
-		assertEquals(3, endDate.getDate());
-		
-		
+		assertEquals(4, obj.getMonth());
+		assertEquals(3, obj.getDay());	
 	}
 
 }

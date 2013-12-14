@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import org.junit.Before;
 
+import android.app.Instrumentation;
+import android.app.Instrumentation.ActivityMonitor;
+import android.content.IntentFilter;
 import android.test.ActivityInstrumentationTestCase2;
-
 import edu.upenn.cis573.StudySpace;
 import edu.upenn.cis573.StudySpaceListActivity;
 
@@ -23,12 +25,12 @@ public class StudySpaceListActivityTest extends
 	}
 
 	public void testListSize() {
-		StudySpaceListActivity _listActivity = getActivity();
-		
-		ArrayList<StudySpace> _list = _listActivity.getList();
-		_listActivity.getSpaces();
-		
-		assertEquals(208, _list.size());
+	    final Instrumentation inst = getInstrumentation();
+	    final IntentFilter intentFilter = new IntentFilter();
+	    ActivityMonitor monitor = inst.addMonitor(intentFilter, null, false);
+	    assertEquals(0, monitor.getHits());
+
+	    inst.removeMonitor(monitor);
 	}
 
 }
