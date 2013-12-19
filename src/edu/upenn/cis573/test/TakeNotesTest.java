@@ -18,13 +18,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TakeNoteButtonTest extends
+public class TakeNotesTest extends
 ActivityInstrumentationTestCase2<SearchActivity> {
 
     SearchActivity searchActivity;
     Button noteButton;
 
-    public TakeNoteButtonTest(){
+    public TakeNotesTest(){
         super("edu.upenn.cis573", SearchActivity.class);
     }
 
